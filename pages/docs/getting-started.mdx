@@ -25,7 +25,7 @@ yarn create next-app
 pnpm create next-app
 ```
 
-如果你想要使用 TypeScript 來開發，你可以加上 `--typescript` 旗幟。
+如果你想要使用 TypeScript 來開發，你可以在指令後方加上 `--typescript` 。
 
 ```bash
 npx create-next-app@latest --typescript
@@ -39,7 +39,7 @@ pnpm create next-app --typescript
 
 - 執行 `npm run dev` 或 `yarn dev` 或 `pnpm dev` 來開啟開發伺服器，位址為 `http://localhost:3000`。
 - 到 `http://localhost:3000` 去查看你的應用程式。
-- 編輯 `pages/index.js` 文件，你可以在瀏覽器上看到更新的結果。
+- 編輯 `pages/index.js` 檔案，你可以在瀏覽器上看到更新的結果。
 
 關於使用 `create-next-app` 的更多資訊，你可以查看 [`create-next-app` 文件](/docs/api-reference/create-next-app.md)。
 
@@ -73,14 +73,14 @@ pnpm add next react react-dom
 - `start` - 執行 [`next start`](/docs/api-reference/cli.md#production) 來啟動正式環境伺服器
 - `lint` - 執行 [`next lint`](/docs/api-reference/cli.md#lint) 來設定 Next.js 內建的 ESLint 配置
 
-在你的應用程式根目錄中新增兩個目錄資料夾 `pages` 和 `public`：
+在你的應用程式根目錄中新增兩個資料夾 `pages` 和 `public`：
 
 - `pages` - 路由的路徑對應著他們的檔案名稱。 例如： `pages/about.js` 對應到 `/about`
-- `public` - 存放靜態的檔案。例如： 圖片、字型等。 在public目錄底下的檔案可對應到專案的base URL(`/`)下。 
+- `public` - 存放靜態的檔案。例如： 圖片、字型等。 在 public 目錄底下的檔案可對應到專案的 base URL (`/`) 下。 
 
-Next.js 是圍繞著 [頁面(pages)](/docs/basic-features/pages.md) 這個概念而建構出來的。 一個頁面(page)就是從 `pages` 目錄資料夾底下的 .js、.jsx、.ts 或 .tsx 檔案導出的[React 元件](https://reactjs.org/docs/components-and-props.html)。 甚至你可以在檔案名稱增加 [動態路由](/docs/routing/dynamic-routes) 的參數。
+Next.js 是圍繞著 [頁面(pages)](/docs/basic-features/pages.md) 這個概念而建構出來的。 一個頁面（ Page ）就是從 `pages` 目錄資料夾底下的 `.js` 、 `.jsx` 、 `.ts` 或 `.tsx` 檔案導出的 [React 元件](https://reactjs.org/docs/components-and-props.html)。 甚至你可以在檔案名稱增加 [動態路由](/docs/routing/dynamic-routes) 的參數。
 
-在你的專案 `pages` 目錄資料夾下新增 `index.js` 檔案來作為開始。這是一個使用者訪問你的應用程式的首頁。
+在你的專案 `pages` 資料夾下新增 `index.js` 檔案來開始。這是一個使用者訪問你的應用程式的首頁。
 
 在 `pages/index.js` 中新增以下內容：
 
@@ -100,10 +100,10 @@ export default HomePage
 
 到目前為止，我們學到了：
 
-- 自動編譯 和 [打包 bundling](/docs/advanced-features/compiler.md) 
-- [React快速重整 React Refresh](https://nextjs.org/blog/next-9-4#fast-refresh)
-- 頁面[`pages/`](/docs/basic-features/pages.md)的 [靜態生成和伺服器渲染 Static generation and server-side rendering](/docs/basic-features/data-fetching/overview.md)
-- [伺服靜態檔案 Static file serving](/docs/basic-features/static-file-serving.md) `public/` 對應到專案的base URL(`/`)下 
+- 自動編譯 和 [打包 （ bundling ）](/docs/advanced-features/compiler.md) 
+- [React 快速重新整理](https://nextjs.org/blog/next-9-4#fast-refresh)
+- 頁面[`pages/`](/docs/basic-features/pages.md)的 [靜態生成和伺服器渲染](/docs/basic-features/data-fetching/overview.md)
+- [靜態檔案](/docs/basic-features/static-file-serving.md) `public/` 對應到專案的base URL(`/`)下 
 
 此外，任何 Next.js 應用程式從一開始就可以投入到正式環境使用。詳情請閱讀更多我們的[部署文件](/docs/deployment.md)。
 
@@ -115,20 +115,23 @@ export default HomePage
 <div className="card">
   <a href="/docs/basic-features/pages.md">
     <b>Pages:</b>
-    <small>進一步學習什麼是Next.js的頁面(pages)。</small>
+    <small>進一步學習什麼是 Next.js 的頁面（ Pages)。</small>
   </a>
 </div>
 
 <div className="card">
   <a href="/docs/basic-features/built-in-css-support.md">
-    <b>支援CSS:</b>
-    <small>內建CSS支援新增自訂樣式到你的應用程式。</small>
+    <b>支援 CSS ：</b>
+    <small>內建 CSS 支援新增自訂樣式到你的應用程式。</small>
   </a>
 </div>
 
 <div className="card">
   <a href="/docs/api-reference/cli.md">
     <b>CLI:</b>
-    <small>學習更多關於Next.js CLI</small>
+    <small>學習更多關於 Next.js CLI</small>
   </a>
 </div>
+
+
+<TranslatedBy githubUserNames={['kaiyuncheng']} />
